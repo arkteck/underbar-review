@@ -411,7 +411,6 @@
       });
 
       it('should give different results for different arguments', function() {
-        console.log('memoize tests');
         expect(memoAdd(1, 2)).to.equal(3);
         expect(memoAdd(3, 4)).to.equal(7);
         expect(memoAdd(1, 3)).to.equal(4);
@@ -500,7 +499,6 @@
       it('should have the same elements as the original object', function() {
         var numbers = [4, 5, 6];
         var shuffled = _.shuffle(numbers).sort();
-        console.log('failed test');
         expect(shuffled).to.eql([4, 5, 6]);
       });
 
